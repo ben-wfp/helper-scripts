@@ -43,9 +43,9 @@ echo "
 Executing commit with commit message: ${commitmsg}"
 
 if [ $stage == 'y' ]; then 
-    git commit -am "'${commitmsg}'"
+    git commit -am "${commitmsg}"
 elif [ $stage == 'n' ]; then
-    git commit -m "'${commitmsg}'"
+    git commit -m "${commitmsg}"
 else
     cowsay "Bad option :-("; exit 1
 fi
