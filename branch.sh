@@ -30,10 +30,10 @@ else
 fi
 
 read -p "
-Enter ticket number:" ticket
+Enter ticket number: " ticket
 
 read -p "
-Enter branch description (kebab-case):" desc
+Enter branch description (kebab-case): " desc
 
 branchname="${typename}/WEB-${ticket}_${desc}"
 

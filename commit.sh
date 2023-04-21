@@ -23,19 +23,19 @@ fi
 echo "
 Creating commit message in the form: ${type}(domain): ${ticket} <commit message>"
 
-read -p "Enter domain (or hit enter if none):" domain
+read -p "Enter domain (or hit enter if none): " domain
 
 if [[ $domain != '' ]]; then 
     domain="(${domain})"
 fi
 
-read -p "Enter commit message (Sentence case, imperative form):" msg
+read -p "Enter commit message (Sentence case, imperative form): " msg
 
 if [[ $msg == '' ]]; then 
     cowsay "Commit message mandatory :-("; exit 1
 fi
 
-read -p "Stage all files by passing the -a flag? (y/n):" stage
+read -p "Stage all files by passing the -a flag? (y/n): " stage
 
 commitmsg="${type}${domain}: ${ticket} ${msg}"
 
